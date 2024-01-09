@@ -4,7 +4,7 @@ import flag1 from '../public/Chelsea-flag.png'
 import bollImg from '@/public/soccer-goal.png'
 export default function Home() {
   return (
-    <section className='bg-[#151515] w-full h-[calc(100%-96px)] grid grid-cols-[340px_minmax(900px,_1fr)_340px]'>
+    <section className='bg-[#151515] w-full h-[calc(100%-96px)] grid grid-cols-[340px_1fr_340px]'>
       <div className='mt-16'>
         <div className='px-3'>
           <div className='flex mb-6 justify-between items-center text-white'>
@@ -33,15 +33,15 @@ export default function Home() {
         </div>
 
         <div>
-          <div class="w-full bg-gray-200 max-w-sm my-12 mx-auto rounded-lg overflow-hidden border border-gray-300">
-            <div class="bg-[#0D0D0D] w-3/5 text-xs leading-none py-1" ></div>
-          </div>
+
         </div>
       </div>
-
-      <div className='bg-green-400 w-full grid-cols-6'>
+      {/* 2nd Div */}
+      <div className=' grid-cols-6'>
         herr
       </div>
+
+      {/* 3rd Div */}
 
       <div className='mt-16'>
         <div className='px-3'>
