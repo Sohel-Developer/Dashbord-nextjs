@@ -7,3 +7,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+@layer components {
+  .sideBarLink {
+    @apply hover:text-[#F14B51] transition-all duration-200 text-2xl
+  }
+}

@@ -1,7 +1,10 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import logo from '../public/asd1.png'
+import boll from '../public/soccer-ball 1.png'
 import Image from 'next/image'
+import Link from 'next/link'
+import { FaAd, FaAlignLeft, FaChartBar, FaFootballBall, FaFutbol, FaGlobe, FaGripHorizontal } from "react-icons/fa";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +19,15 @@ export default function RootLayout({ children }) {
       <body className="flex">
         <div className='w-24 bg-black h-screen'>
           <Image src={logo} alt="Logo" />
+          <nav className='text-white mt-8 flex flex-col items-center gap-9'>
+            <Link className='sideBarLink' href='/'> <FaAlignLeft /></Link>
+            <Link className='sideBarLink' href='/'> <FaGripHorizontal /></Link>
+            <Link className='sideBarLink' href='/'> <FaChartBar /></Link>
+            <div className='w-1/2 border-b-2 my-4 border-gray-300'></div>
+            <Link className='sideBarLink' href='/'><FaFutbol /> </Link>
+            <Link className='sideBarLink' href='/'><FaFootballBall /> </Link>
+            <Link className='sideBarLink' href='/'><FaGlobe /> </Link>
+          </nav>
         </div>
         <div>
           <div className='bg-red-200'> Navbar</div>
