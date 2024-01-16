@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <div className='w-24 bg-black h-screen'>
           <Image src={logo} alt="Logo" />
           <nav className='text-white mt-8 flex flex-col items-center gap-9'>
-            <Link className='sideBarLink ' href='/'> <FaAlignLeft /></Link>
+            <Link className='sideBarLink' href='/'> <FaAlignLeft /></Link>
             <Link className='sideBarLink' href='/'> <FaGripHorizontal /></Link>
             <Link className='sideBarLink' href='/'> <FaChartBar /></Link>
             <div className='w-1/2 border-b-2 my-4 border-gray-300'></div>

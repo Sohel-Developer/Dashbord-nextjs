@@ -2,6 +2,9 @@ import Image from 'next/image'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import flag1 from '../public/Chelsea-flag.png'
 import bollImg from '@/public/soccer-goal.png'
+import livarpool from '@/public/liverpool1.png'
+import everton from '@/public/everton1.png'
+import LatestMatches from '@/public/components/LatestMatches'
 export default function Home() {
   return (
     <section className='bg-[#151515] w-full h-[calc(100%-96px)] grid grid-cols-[340px_1fr_340px]'>
@@ -32,13 +35,68 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        {/* 2nd div */}
+        <div className='bg-black m-3 text-white rounded-md space-y-5 py-5'>
+          <div className='grid grid-flow-col text-center col-span-3'>
+            <span>Team</span><span>D</span><span>L</span><span>Ga</span><span>Gd</span><span>Pts</span>
+          </div>
+          <div className='grid grid-flow-col text-center col-span-3'>
+            <span>Liver Pool</span><span>6</span><span>2</span><span>21</span><span>16</span><span>23</span>
+          </div>
+          <div className='grid grid-flow-col text-center col-span-3'>
+            <span>Liver Pool</span><span>6</span><span>2</span><span>21</span><span>16</span><span>23</span>
+          </div>
+          <div className='grid grid-flow-col text-center col-span-3'>
+            <span>Liver Pool</span><span>6</span><span>2</span><span>21</span><span>16</span><span>23</span>
+          </div>
+          <div className='grid grid-flow-col text-center col-span-3'>
+            <span>Liver Pool</span><span>6</span><span>2</span><span>21</span><span>16</span><span>23</span>
+          </div>
+        </div>
+
+        <div className='bg-black m-3 text-white rounded-md space-y-3 py-5'>
+          <div className=' flex justify-between px-3 '>
+            <span>Team</span> <div className='space-x-10 border-b-[1px] pb-2 border-gray-500 w-1/2'><span>Holding</span><span>$ASD</span></div>
+          </div>
+          <div className=' flex justify-between text-center px-3'>
+            <span>Wallet ID Hare</span> <div className='space-x-10 border-b-[1px] pb-2 border-gray-500 w-1/2'><span>23</span><span>38</span></div>
+          </div>
+          <div className=' flex justify-between text-center px-3'>
+            <span>Wallet ID Hare</span> <div className='space-x-10 border-b-[1px] pb-2 border-gray-500 w-1/2'><span>23</span><span>38</span></div>
+          </div>
+          <div className=' flex justify-between text-center px-3'>
+            <span>Wallet ID Hare</span> <div className='space-x-10 border-b-[1px] pb-2 border-gray-500 w-1/2'><span>23</span><span>38</span></div>
+          </div>
+          <div className=' flex justify-between text-center px-3'>
+            <span>Wallet ID Hare</span> <div className='space-x-10 border-b-[1px] pb-2 border-gray-500 w-1/2'><span>23</span><span>38</span></div>
+          </div>
 
         </div>
       </div>
       {/* 2nd Div */}
       <div className=' grid-cols-6'>
-        herr
+        <div className='bg-[var(--primary-color)] p-10 flex justify-between'>
+
+          <div className='text-white space-y-5 '>
+            <h1 className='text-5xl'>Liverpool</h1>
+
+            <p>VS</p>
+            <h1 className='text-5xl'>Everton</h1>
+            <div className='flex text-xl gap-5'>
+              <span >5:00PM</span><span>Spain</span>
+            </div>
+            <p>Next Fixture</p>
+          </div>
+
+          <div className='flex gap-5'>
+            <Image src={livarpool} alt='Liverpool' />
+            <Image src={everton} alt='everton' />
+          </div>
+
+
+
+        </div>
+        <LatestMatches />
       </div>
 
       {/* 3rd Div */}
@@ -109,6 +167,10 @@ export default function Home() {
           <Image className='-mt-8 -mr-5' src={bollImg} alt='' />
 
         </div>
+
+
+
+
 
 
       </div>
