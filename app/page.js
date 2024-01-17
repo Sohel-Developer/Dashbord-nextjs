@@ -74,8 +74,8 @@ export default function Home() {
         </div>
       </div>
       {/* 2nd Div */}
-      <div className=' grid-cols-6'>
-        <div className='bg-[var(--primary-color)] p-10 flex justify-between'>
+      <div className=' grid-cols-6 p-5'>
+        <div className='bg-[var(--primary-color)] rounded-md p-10 flex justify-between'>
 
           <div className='text-white space-y-5 '>
             <h1 className='text-5xl'>Liverpool</h1>
@@ -96,7 +96,9 @@ export default function Home() {
 
 
         </div>
-        <LatestMatches />
+        <div className='mt-5 '>
+          <LatestMatches />
+        </div>
       </div>
 
       {/* 3rd Div */}
@@ -132,24 +134,24 @@ export default function Home() {
             <div className='flex justify-evenly items-center'>
               <span>Attacks</span>
               <span>27</span>
-              <div class="w-2/5 bg-white rounded-full h-2.5 dark:bg-gray-700">
-                <div class="bg-black h-2.5 w-3/5 rounded-full" ></div>
+              <div className="w-2/5 bg-white rounded-full h-2.5 dark:bg-gray-700">
+                <div className="bg-black h-2.5 w-3/5 rounded-full" ></div>
               </div>
               <span>12</span>
             </div>
             <div className='flex justify-evenly items-center'>
               <span>Attacks</span>
               <span>6</span>
-              <div class="w-2/5 bg-white rounded-full h-2.5 dark:bg-gray-700">
-                <div class="bg-black h-2.5 w-2/5 rounded-full" ></div>
+              <div className="w-2/5 bg-white rounded-full h-2.5 dark:bg-gray-700">
+                <div className="bg-black h-2.5 w-2/5 rounded-full" ></div>
               </div>
               <span>16</span>
             </div>
             <div className='flex justify-evenly items-center'>
               <span>Attacks</span>
               <span>70%</span>
-              <div class="w-2/5 bg-white rounded-full h-2.5 dark:bg-gray-700">
-                <div class="bg-black h-2.5 w-4/5 rounded-full" ></div>
+              <div className="w-2/5 bg-white rounded-full h-2.5 dark:bg-gray-700">
+                <div className="bg-black h-2.5 w-4/5 rounded-full" ></div>
               </div>
               <span>30%</span>
             </div>

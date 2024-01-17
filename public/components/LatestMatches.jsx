@@ -3,8 +3,8 @@ import MatchesRowData from './MatchesRowData';
 
 const LatestMatches = () => {
     return (
-        <div className='text-white'>
-            <div className='flex justify-between'>
+        <div className=''>
+            <div className='flex pb-5 justify-between text-white '>
                 <h2>Latest Matches</h2>
                 <div className='flex justify-between '>
                     <span>Filter:</span>
@@ -22,9 +22,15 @@ const LatestMatches = () => {
                 <button>ViewAll</button>
             </div>
 
-            <div>
+
+            <div className='space-y-5 '>
+                <MatchesRowData />
+                <MatchesRowData />
+                <MatchesRowData />
+                <MatchesRowData />
                 <MatchesRowData />
             </div>
+
         </div>
     );
 };
