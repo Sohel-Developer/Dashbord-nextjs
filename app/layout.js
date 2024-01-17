@@ -1,6 +1,6 @@
-import { Inter } from 'next/font/google'
+
 import './globals.css'
-import logo from '../public/asd1.png'
+import logo from '@/public/asd1.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaAlignLeft, FaBell, FaChartBar, FaChevronDown, FaFootballBall, FaFutbol, FaGlobe, FaGripHorizontal, FaRegEnvelope, FaRegHeart, FaUserCircle } from "react-icons/fa";
@@ -8,11 +8,14 @@ import { FaAlignLeft, FaBell, FaChartBar, FaChevronDown, FaFootballBall, FaFutbo
 
 
 export const metadata = {
-  title: 'Fotball | Dashbord',
+  title: 'Dashbord | Matches ',
   description: 'Dashbord For Fotball website',
 }
 
+
+
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className="flex">
@@ -31,8 +34,9 @@ export default function RootLayout({ children }) {
         <div className='w-full'>
           <div className=' h-24   bg-[#0D0D0D] text-white flex justify-between items-center'>
             <nav className='space-x-7 ps-7'>
-              <Link className='text-xl' href="/">Matches</Link>
-              <Link className='text-xl' href="/">Staking</Link>
+              <Link className='text-xl' href="/matches">Matches</Link>
+
+              <Link className='text-xl' href="/staking">Staking</Link>
               <Link className='text-xl' href="/">Rewords</Link>
               <Link className='text-xl' href="/">Trade</Link>
             </nav>

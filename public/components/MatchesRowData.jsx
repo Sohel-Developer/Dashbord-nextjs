@@ -8,7 +8,7 @@ import realmardrid from '@/public/realmadrid.png'
 
 const MatchesRowData = () => {
     return (
-        <div className='bg-white rounded-md text-black flex  justify-between items-center p-5'>
+        <div className='text-white rounded-md bg-black   flex  justify-between items-center p-5 matchesRow'>
             <div className='flex items-center gap-5'>
                 <Image src={barcelona} alt='Barcelona Flag' />
                 <p>Barcelona</p>
@@ -25,7 +25,7 @@ const MatchesRowData = () => {
                 <FaMapMarkerAlt />
                 <span>Spain</span>
             </div>
-            <div>
+            <div >
                 <FaHeart />
             </div>
             <Link href="/" className='flex gap-3 items-center'>View Details <FaArrowRight /></Link>

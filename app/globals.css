@@ -6,8 +6,22 @@
   --primary-color: #FF5E19;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @layer components {
   .sideBarLink {
     @apply hover:text-[var(--primary-color)] transition-all duration-200 text-2xl
   }
+}
+
+.matchesRow:hover {
+  background-color: white;
+  color: black;
+  transition: all;
+  transition-duration: 0.2s;
+  cursor: pointer;
 }
